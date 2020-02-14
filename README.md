@@ -19,7 +19,7 @@ This will produce a c file, which you compile using something like this:
 
 `gcc -shared -pthread -fPIC -fwrapv -O2 -Wall -fno-strict-aliasing -I/usr/include/python3.6m -o compute.so compute.c`
 
-Notice you need to point the compiler ar your installed python headers - which may not be in the same place as mine.
+Notice you need to point the compiler at your installed python headers - which may not be in the same place as mine.
 
 If compilation is successful, then you'll obtain a compute.so file, which can be imported from python as normal. Windows compilation will be a little more complex, as gcc isn't available to you. [Here might help!](https://github.com/cython/cython/wiki/CythonExtensionsOnWindows)
 
